@@ -2,11 +2,10 @@
 
 Sponsors
 =======================
-Thank you very much for support and partnership to:
-- Beehive.bg
-- 158ltd.com
-- ICN.BG
-- Microsoft Bulgaria
+- <a href="http://beehive.bg" target="_blank" title="Beehive - Споделеното Работно Място на Варна | Beehive Varna Co-working space">Beehive.bg</a>
+- <a href="http://www.158ltd.com" target="_blank" title="Website development or software, SEO Optimization, Mobile Apps">158ltd.com</a>
+- <a href="https://www.icn.bg" target="_blank" title="Хостинг, домейни, виртуални и наети сървъри, колокация - ICN.bg">ICN.BG</a>
+- <a href="http://www.microsoft.com/bg-bg/default.aspx" target="_blank" title="Microsoft България | Устройства и услугиosoft Home Page | Devices and Services">Microsoft Bulgaria</a>
 
 Lecture 00 
 =======================
