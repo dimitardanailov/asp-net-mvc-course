@@ -23,7 +23,7 @@ Contacts and Course Resources
 =======================
 - Facebook Group: https://www.facebook.com/groups/asp.netmvcframework/
 - Slideshare: http://www.slideshare.net/dimityrdanailov
-- Youtube: 
+- Youtube: https://www.youtube.com/watch?v=tj7ZdLRUHps&list=PLDEH_aLlnP5ozB6bGdrIw5LATT7CXFSaL
 
 Github Commands
 =======================
