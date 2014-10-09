@@ -16,8 +16,7 @@ Today will make quick overview what is:
 - Installation of SQL Management Studio
 
 Resources:
-- <a href="http://msdn.microsoft.com/en-us/data/hh297027" target="_blank" title="
-Microsoft SQL Server Data Tools">Microsoft SQL Server Data Tools</a>
+- <a href="http://www.asp.net" target="_blank" title="http://www.asp.net/">ASP.NET MVC - Website</a>
 - <a href="http://msdn.microsoft.com/en-us/data/hh297027" target="_blank" title="
 Microsoft SQL Server Data Tools">Microsoft SQL Server Data Tools</a>
 
