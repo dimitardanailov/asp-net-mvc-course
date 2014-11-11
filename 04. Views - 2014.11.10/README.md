@@ -26,8 +26,13 @@ In Razor Syntax, the @ symbol has varios uses. You can:
 
 ## Model reference
 
+```csharp
 @model IEnumerable<MyWebsite.Models.Product>
+```
+
+```csharp
 @model AsianAbsoluteMVC.Models.Product
+```
 
 ## HTML Helpers
 
