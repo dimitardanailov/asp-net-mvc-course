@@ -1,4 +1,4 @@
-﻿## Asp.Net MVC - Views (10.11.2014)
+## Asp.Net MVC - Views (10.11.2014)
 
 ## Спонсори
 - http://beehive.bg
