@@ -8,10 +8,12 @@
 
 ## Models
 
+```csharp
 public MyInstance()
 {
 	this.Clients = new List<Client>();
 }
+```
 
 Install EnityFramework:
 Tools -> Nuget Package Maganer -> Manage Nuget Packages for Solution ... -> (Online) EnityFramework
@@ -33,6 +35,7 @@ Controllers
 
 Example:
 
+```csharp
 routes.MapRoute
 (
 	name: "Project",
@@ -43,6 +46,7 @@ routes.MapRoute
 		action = "Details"
 	}
 );
+```
 
 3. Passing Data
 Model
