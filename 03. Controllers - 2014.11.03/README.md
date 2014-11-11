@@ -22,10 +22,7 @@ Tools -> Nuget Package Maganer -> Manage Nuget Packages for Solution ... -> (Onl
 
 DbContext Class
 ```
-A DbContext instance represents a combination of the Unit Of Work and 
-Repository patterns such that it can be used to query from a database and group 
-together changes that will then be written back to the store as a unit. 
-DbContext is conceptually similar to ObjectContext.
+A DbContext instance represents a combination of the Unit Of Work and Repository patterns such that it can be used to query from a database and group together changes that will then be written back to the store as a unit. DbContext is conceptually similar to ObjectContext.
 ```
 
 ## Controllers
