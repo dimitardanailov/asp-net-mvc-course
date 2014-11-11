@@ -28,9 +28,9 @@ DbContext is conceptually similar to ObjectContext.
 
 ## Controllers
 
-1. Responding to user Request
+- Responding to user Request
 
-2. Routes
+- Routes
 
 Example:
 
@@ -48,18 +48,20 @@ routes.MapRoute
 ```
 
 ### Passing Data
-- Model
+
+1. Model
 	- View(data)
 	- Strongly typed, can be more flexible
 	- More complex
--ViewBag
+2. ViewBag
 	- Dynamic object for storing basic pieces of information
 		- Alias for ViewData
 	- Perfect for sending messages to the view
 	- Only available for that action
 		- Redirects cause the ViewBag to be emptied
--TempData
+3. TempData
 	- Just like the ViewBag, but it’s also available on the next page
 
 ### Save information to Database
-// Post: http://www.asp.net/mvc/tutorials/getting-started-with-ef-using-mvc/updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application
+
+http://www.asp.net/mvc/tutorials/getting-started-with-ef-using-mvc/updating-related-data-with-the-entity-framework-in-an-asp-net-mvc-application
