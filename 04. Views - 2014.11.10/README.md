@@ -41,3 +41,6 @@ In Razor Syntax, the @ symbol has varios uses. You can:
 - @Html.DisplayNameFor
 - @Html.DisplayFor
 - @Html.DropDownListFor
+
+### Screencast
+Youtube: https://www.youtube.com/watch?v=nfwxtQhiKpo
