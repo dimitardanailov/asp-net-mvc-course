@@ -1,0 +1,18 @@
+﻿@model BeehiveStore.Models.Category
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+@{
+    Html.RenderAction("DisplayCategoryInformation", "CategoryModeration", new
+    { 
+        category = Model
+    });
+}
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CategoryID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
