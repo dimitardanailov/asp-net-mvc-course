@@ -9,7 +9,9 @@
 ## Manufacturers CRUD Task
 
 You should make CRUD system for Manufacturers.
+
 Please use existing Area: StoreAdministrator
+
 Manufacturer Database fields:
 - ManufacturerID [PrimariKey][Required]
 - StoreID [ForeignKey][Optional]
