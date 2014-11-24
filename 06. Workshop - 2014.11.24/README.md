@@ -8,7 +8,7 @@
 
 ## Manufacturers CRUD Task
 
-You should make CRUD system for Manufacturers.
+You should make CRUD(Create, read, update and delete) system for Manufacturers. CRUD Wiki Page: http://en.wikipedia.org/wiki/Create,_read,_update_and_delete
 
 Please use existing Area: StoreAdministrator
 
