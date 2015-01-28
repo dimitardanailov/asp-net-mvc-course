@@ -1,0 +1,104 @@
+﻿@model BeehiveStore.Models.Product
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Ajax.BeginForm("Create", "Product",
+new AjaxOptions()
+{
+    HttpMethod = "POST",
+    OnBegin = "AjaxUpdateDataLoading($(this));",
+    OnSuccess = "AjaxUpdateDateOnSuccess($(this))",
+    OnFailure = "AjaxDisplayErrors($(this))"
+},
+new
+{
+    @id = "form-id",
+    @data_attribute = "my attribute",
+    @class = "class"
+}))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Product</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            
+            @{
+                String categoryLabel = String.Format("{0} *", "Please select category");
+                @Html.LabelFor(model => Model.CategoryID, categoryLabel, new 
+                { 
+                    @class = "control-label col-md-2",
+                    @for =  Model.CategoryID,
+                    @data_details = "My Details"
+                })
+            }
+            <div class="col-md-10">
+               @{
+                   @Html.DropDownListFor(
+                        model => Model.StoreID,
+                        (SelectList)ViewBag.CategoriesItems,
+                        String.Format("{0} {1}", "", "Default label"),
+                        new
+                        {
+                            @class = "",
+                        }
+                   )
+
+                   @Html.ValidationMessageFor(model => Model.CategoryID)
+               } 
+            </div>
+        </div>
+
+        <div class="form-group">
+            @{
+                String storeLabel = String.Format("{0} *", "Please select store");
+                @Html.LabelFor(model => Model.StoreID, storeLabel, new 
+                { 
+                    @class = "control-label col-md-2",
+                    @for =  Model.StoreID,
+                    @data_details = "My Details"
+                })
+            }
+            <div class="col-md-10">
+               @{
+                   @Html.DropDownListFor(
+                        model => Model.StoreID,
+                        (SelectList)ViewBag.StoriesItems,
+                        String.Format("{0} {1}", "", "Default label"),
+                        new
+                        {
+                            @class = "",
+                        }
+                   )
+
+                   @Html.ValidationMessageFor(model => Model.StoreID)
+               }                 
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

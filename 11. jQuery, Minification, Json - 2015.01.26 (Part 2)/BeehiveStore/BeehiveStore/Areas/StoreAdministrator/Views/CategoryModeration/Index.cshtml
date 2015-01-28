@@ -1,0 +1,27 @@
+﻿@model IEnumerable<BeehiveStore.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index
+</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@foreach (var item in Model)
+{
+    Html.RenderAction("DisplayCategoryInformation", "CategoryModeration", new
+    { 
+        category = item
+    });
+    
+    <div>
+
+        @Html.ActionLink("Edit", "Edit", new { id = item.CategoryID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.CategoryID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.CategoryID })
+    </div>
+}
