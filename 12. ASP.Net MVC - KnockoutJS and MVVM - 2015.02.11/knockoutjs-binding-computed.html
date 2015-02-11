@@ -1,0 +1,88 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Knockout.js - Binding and Computed </title>
+
+	<script type='text/javascript' src='knockout-3.2.0.js'></script>
+</head>
+
+<body>
+
+	<h2> Data - Binding and Computed </h2>
+	<div>
+		<label>First Name: </label>
+		<input type="text" data-bind="value: firstName" 
+			   placeholder="First name"/>
+	</div>
+
+	<div>
+		<label>Last Name: </label>
+		<input type="text" data-bind="value: lastName" 
+			   placeholder="Last name"/>
+	</div>
+
+	<h3>Hello, 
+		<span data-bind="text: fullName"></span>!
+	</h2>
+
+	<h2> Observable Arrays </h2>
+
+	<div data-bind="foreach: products" id="foreach-example">
+        <div>
+            <div data-bind="text: id"></div>
+            <div data-bind="text: name"></div>
+            <p data-bind="text: description">
+
+            </p>
+        </div>
+    </div>
+
+
+	<script type="text/javascript">
+
+		// First Example
+		var ViewModel = function(firstName, lastName) {
+			this.firstName = ko.observable(firstName),
+			this.lastName = ko.observable(lastName),
+
+			this.fullName = ko.pureComputed(function() {
+        		// Knockout tracks dependencies automatically. It knows that fullName depends on firstName and lastName, because these get called when evaluating fullName.
+        		return this.firstName() + " " + this.lastName();
+    		}, this);
+		};
+
+		ko.applyBindings(new ViewModel("Dimitar", "Danailov"));
+
+		// Second Example
+		var products = new Array();
+		products[0] = {
+			'id': 1,
+			'name': 'My Product',
+			'description': 'My Descripton'
+		}
+
+		products[1] = {
+			'id': 2,
+			'name': 'My Second Product',
+			'description': 'My Second Descripton'
+		}
+
+		products[2] = {
+			'id': 3,
+			'name': 'My 3rd Product',
+			'description': 'My 3rd Descripton'
+		}
+
+		products[3] = {
+			'id': 4,
+			'name': 'My 4th Product',
+			'description': 'My 4th Descripton'
+		}	
+
+		ko.applyBindings({
+			products: products
+		});
+	</script>
+</body>
+
+</html>
