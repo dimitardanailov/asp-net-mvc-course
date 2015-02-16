@@ -37,7 +37,7 @@ Bower works by fetching and installing packages from all over, taking care of hu
 npm install -g bower
 ```
 
-- Installation
+- Installation of bower package
 
 ```bash
 bower install <package>

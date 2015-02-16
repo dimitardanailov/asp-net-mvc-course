@@ -92,7 +92,7 @@ npm install gulp --save-dev
 npm install --save-dev gulp-uglify
 ```
 
-## Grunt
+## Http Server
 
 https://github.com/nodeapps/http-server
 
