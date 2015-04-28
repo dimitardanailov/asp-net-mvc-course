@@ -1,0 +1,25 @@
+{
+    "version": "1.4.1",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./Enums/Gender.ts",
+        "./Models/ShoolSubject/Base.ts",
+        "./Models/ShoolSubject/Mathematics.ts",
+        "./Models/ShoolSubject/Music.ts",
+        "./Models/Users/Child.ts",
+        "./Models/Users/Human.ts",
+        "./Models/Users/Parent.ts",
+        "./app.ts"
+    ]
+}
